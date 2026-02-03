@@ -1,11 +1,8 @@
 cmake_minimum_required(VERSION 3.31)
-project(tott)
+project(tott-demo)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_library(tott
-        src/actor.h
-        src/tie.h
-        src/social_net.cpp
-        src/social_net.h
-        src/types.h)
+add_executable(tott-demo src/demo.cpp)
+
+find_package(tott)
